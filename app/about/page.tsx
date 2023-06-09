@@ -8,7 +8,7 @@ import React from "react";
 
 export const metadata: Metadata = {
   title: "About",
-  description: "VP of Developer Experience at Vercel.",
+  description: "Tattoo Apprentice at Lyfestyle Ink",
 };
 
 export default function AboutPage() {
