@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Mdx } from 'components/mdx';
 import { allBlogs } from 'contentlayer/generated';
