@@ -31,6 +31,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".contentlayer/generated"
-, "components/contact.jsx", "content/Large.mdx"  ],
+, "components/contact.jsx", "content/large.mdx"  ],
   "exclude": ["node_modules"]
 }
