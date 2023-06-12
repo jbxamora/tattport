@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Contact from "../components/contact";
-import { name, about, bio, avatar } from "../lib/info";
+import { about, bio, avatar } from "../lib/info";
 import React from "react";
 import { ArrowIcon, InstagramIcon } from "components/icons";
 
@@ -17,7 +17,7 @@ export default function HomePage() {
       </div>
       <div className="flex flex-col md:flex-row justify-center items-center mx-auto ">
         <Image
-          alt={name}
+          alt="CYEXIST"
           className="border grayscale"
           src={avatar}
           width={500}
