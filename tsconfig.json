@@ -31,6 +31,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     ".contentlayer/generated"
-  ],
+, "components/contact.jsx"  ],
   "exclude": ["node_modules"]
 }
