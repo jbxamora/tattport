@@ -13,14 +13,11 @@ const navItems = {
   '/gallery': {
     name: 'Gallery',
   },
-  '/guestbook': {
-    name: 'Guestbook',
-  },
 };
 
 function Logo() {
   return (
-    <Link aria-label="Lee Robinson" href="/">
+    <Link aria-label="LyfeStyle Ink" href="/">
       <motion.svg
         className="text-black dark:text-white h-[25px] md:h-[37px]"
         width="25"

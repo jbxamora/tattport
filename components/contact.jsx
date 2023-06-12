@@ -67,32 +67,32 @@ const Contact = () => {
   };
 
   return (
-    <div className="bg-gray-800 dark:bg-white xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden justify-center">
+    <div className="bg-gray-800 dark:bg-white xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden justify-center font-serif">
       <div className="flex-[0.75] bg-black-100 dark:bg-gray-200 p-8 rounded-2xl flex justify-center items-center">
         <div className="flex flex-col items-center justify-center">
-          <h3 className="font-bold text-3xl mb-8 dark:text-black">Contact</h3>
+          <h3 className="font-bold text-3xl mb-8 dark:text-black font-serif">Contact</h3>
           <form
             ref={formRef}
             onSubmit={handleSubmit}
             className="mt-12 flex flex-col"
           >
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4 text-center dark:text-gray-800">
-                Name
+              <span className="text-white font-medium mb-4 text-center dark:text-gray-800 ">
+                Number
               </span>
               <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="What's your name?"
+                placeholder="Preffered # to contact?"
                 required
                 className="bg-tertiary dark:bg-white py-4 px-6 border placeholder:text-secondary dark:placeholder-black text-black dark:text-gray-800 rounded-lg outlined-none border-none font-medium"
               />
             </label>
 
             <label className="flex flex-col">
-              <span className="text-white font-medium mb-4 text-center dark:text-gray-800">
+              <span className="text-white font-medium mb-4 text-center dark:text-gray-800 ">
                 Email
               </span>
               <input
@@ -108,14 +108,16 @@ const Contact = () => {
 
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4 text-center dark:text-gray-800">
-                Message
+                Details
               </span>
               <textarea
                 rows="7"
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="Your message..."
+                placeholder="Name,
+                
+a description of the tattoo (size, placement, line work or shading)"
                 className="bg-neutral-800 dark:bg-white py-4 px-6 placeholder:text-secondary dark:placeholder-black text-black dark:text-gray-800 rounded-lg outlined-none border font-medium"
               />
             </label>

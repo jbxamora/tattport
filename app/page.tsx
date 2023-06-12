@@ -1,20 +1,21 @@
-import Image from 'next/image';
-import Contact from '../components/contact';
-import { name, about, bio, avatar } from '../lib/info';
-import React from 'react';
-import { ArrowIcon, InstagramIcon } from 'components/icons';
+import Image from "next/image";
+import Contact from "../components/contact";
+import { name, about, bio, avatar } from "../lib/info";
+import React from "react";
+import { ArrowIcon, InstagramIcon } from "components/icons";
 
 export const revalidate = 60;
 
-export default async function HomePage() {
-  
+export default function HomePage() {
   return (
     <section>
-      <h1 className="font-bold text-3xl font-serif">{name}</h1>
-      <p className="my-5 max-w-[460px] text-neutral-800 dark:text-neutral-200">
-        {about()}
-      </p>
-      <div className="flex items-start md:items-center my-8 flex-col md:flex-row">
+      <div className="text-center">
+        <h1 className="font-bold text-3xl font-serif text-ellipsis">CYEXIST</h1>
+        <p className="m-5  text-neutral-800 dark:text-neutral-200 text-center justify-center items-center">
+          {about()}
+        </p>
+      </div>
+      <div className="flex flex-col md:flex-row justify-center items-center mx-auto ">
         <Image
           alt={name}
           className="border grayscale"
@@ -31,8 +32,8 @@ export default async function HomePage() {
         <li></li>
       </ul>
       <>
-        DM me on Instagram for the quickest response.
-        <br />
+        For the quickest response during or outside of shop hours DM on
+        Instagram <br />
         <br />
         <div className="flex flex-col gap-2 md:flex-row md:gap-2">
           <a
@@ -51,11 +52,8 @@ export default async function HomePage() {
         <br />
         <br />
         <div className="justify-center text-center">
-          <h5>Interested in commisions?</h5>
-          <br />
-          <br />
-          Send me a message with your phone number and I will get back to you as
-          soon as possible with a quote and more info.
+          To set up a consultation, you can send me a message with the following
+          info.
           <br />
           <br />
         </div>

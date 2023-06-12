@@ -14,8 +14,6 @@ export default async function Blog({ params }) {
   if (!post) {
     notFound();
   }
-
-
   return (
     <section>
       <script type="application/ld+json">

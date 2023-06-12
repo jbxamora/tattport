@@ -19,10 +19,6 @@ const computedFields = {
       datePublished: doc.publishedAt,
       dateModified: doc.publishedAt,
       description: doc.summary,
-      image: doc.image
-        ? `http:localhost:3000/${doc.image}`
-        : `http://localhost:3000/api/og?title=${doc.title}`,
-      url: `http://localhost:3000/blog/${doc._raw.flattenedPath}`,
       author: {
         '@type': 'Person',
         name: 'Jenaly',
