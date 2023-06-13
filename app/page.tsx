@@ -11,7 +11,7 @@ export default function HomePage() {
     <section>
       <div className="text-center">
         <h1 className="font-bold text-3xl font-serif text-ellipsis">CYI.EXIST</h1>
-        <p className="m-5  text-neutral-800 dark:text-neutral-200 text-center justify-center items-center">
+        <p className="m-5 text-neutral-800 dark:text-neutral-200 text-center justify-center items-center">
           {about()}
         </p>
       </div>
