@@ -81,7 +81,7 @@ const Contact = () => {
 
   return (
     <div className=" xl:mt-9 xl:flex-row flex-col-reverse flex gap-6 overflow-hidden justify-center font-serif">
-      <div className="flex-[0.75] p-8 rounded-2xl flex justify-center items-center">
+      <div className="flex-[0.75] p-8 rounded-xl flex justify-center items-center">
         <div className="flex flex-col items-center justify-center">
           <h3 className="font-bold text-3xl mb-4 font-serif">Contact</h3>
           <form
@@ -98,7 +98,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Preffered # to contact?"
                 required
-                className="text-black py-4 px-6 rounded-lg outlined-none border font-small text-center"
+                className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-md p-4 no-underline text-center text-neutral-800 dark:text-neutral-200 outline-none dark:bg-neutral-900 bg-neutral-100 justify-between"
               />
             </label>
 
@@ -111,7 +111,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="What's your email?"
                 required
-                className="text-black py-4 px-6 rounded-lg outlined-none border font-small text-center"
+                className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-md p-4 no-underline text-center text-neutral-800 dark:text-neutral-200 outline-none dark:bg-neutral-900 bg-neutral-100 justify-between"
               />
             </label>
 
@@ -124,14 +124,14 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="Name,
                 a description of the tattoo (size, placement, line work or shading)"
-                className="text-black py-4 px-6 rounded-lg border font-small text-center"
+                className="flex w-full border border-neutral-200 dark:border-neutral-800 rounded-md p-4 no-underline text-center text-neutral-800 dark:text-neutral-200 outline-none dark:bg-neutral-900 bg-neutral-100 justify-between"
               />
             </label>
 
             <div className="flex flex-col items-center sm:flex-row sm:justify-center">
               <button
                 type="submit"
-                className="mt-4 py-3 px-8 border border-gray-400 p-4 w-fit font-bold shadow-sm shadow-white rounded-xl mr-4 sm:justify-content-center"
+                className="mt-5 w-full border border-neutral-200 dark:border-neutral-800 rounded-md p-4 no-underline text-center text-neutral-800 dark:text-neutral-200 outline-none dark:bg-neutral-900 bg-neutral-100 justify-between"
               >
                 {loading ? "Sending..." : "Send"}
               </button>
