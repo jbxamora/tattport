@@ -10,8 +10,11 @@ export default async function BlogPage() {
   return (
     <section>
       <h1 className="font-bold text-3xl font-serif mb-5">My Work</h1>
-
       <div className="w-full flex flex-col">
+        <img src="https://res.cloudinary.com/dlkopl59p/image/upload/v1688532425/Jen/IMG_5813_pbuz9k.png" />
+        <br />
+        <img src="https://res.cloudinary.com/dlkopl59p/image/upload/v1688532424/Jen/IMG_5814_f3lksf.png" />
+        <br />
         <img src="https://res.cloudinary.com/dlkopl59p/image/upload/v1686512430/Jen/IMG_4605_ac478g.jpg" />
         <br />
         <img src="https://res.cloudinary.com/dlkopl59p/image/upload/v1686512424/Jen/IMG_3895_dgxawj.jpg" />
